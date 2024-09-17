@@ -1,0 +1,68 @@
+@font-face { font-family: "Arantxa-Bold"; src: url("./fonts/Arantxa-Bold.ttf"); }
+@font-face { font-family: "Work-Sans"; src: url("./fonts/WorkSans.ttf"); }
+@font-face { font-family: "Yorkten-NorThi"; src: url("./fonts/Yorkten-NorThi.ttf"); }
+.main-value-switcher__mint-image{
+    background-image: url("./pictures/mint.png");
+    width: 50%;
+    height: 1290px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display:inline-block;
+}
+.main-value-switcher__selected-description{
+    display:inline-block;
+    height: 1290px;
+    width: 50vw;
+    position:absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+}
+.main-value-switcher__text-zone{
+    display: flex; /* Используем Flexbox для центровки */
+    justify-content: center; /* Центруем содержимое по горизонтали */
+    
+    flex-direction: column; 
+    margin: auto;
+    padding: 330px 0px 0px 0px; 
+    margin: 0% 10% 0% 10%;
+}
+.main-value-switcher__controls{
+    margin-top: auto;
+    position:absolute; bottom:0;
+    width: 100%;
+    display: flex; /* Устанавливает гибкий контейнер */
+    justify-content: space-between;
+    height: 10vw;
+}
+.main-value-switcher__button{
+    width: 50%;
+    display: inline-flex; /* Использование flexbox для центровки содержимого */
+    align-items: center; /* Выравнивание элементов по вертикали */
+    justify-content: center; /* Выравнивание элементов по горизонтали */
+    border: none; /* Убираем рамку у кнопки */
+    cursor: pointer; /* Указываем курсор мыши при наведении */
+    outline: none; /* Убираем обводку вокруг кнопки */
+    font-size: 32px; /* Размер шрифта */
+    flex-direction: column;
+    transition: all 0.3s ease; /* Переход между состояниями */
+}
+.main-value-switcher__button-left::before{
+    content: url("./elements/previous.svg"); /* Вставка SVG-изображения через data URI */
+    margin-right: 48px; /* Отступ от правого края стрелки до текста */
+}
+.main-value-switcher__button-right::before {
+    content: url("./elements/next.svg"); /* Вставка SVG-изображения через data URI */
+    margin-right: 107px; /* Отступ от правого края стрелки до текста */
+}
+.text-header{
+    font-family: 'Yorkten-NorThi';
+    font-size: 100px;
+    color: rgb(21, 105, 99);
+}
+.text-specification{
+    font-family: 'Yorkten-NorThi';
+    font-size: 25px;
+    color: rgb(86, 68, 51);
+}

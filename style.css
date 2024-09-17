@@ -1,0 +1,50 @@
+@font-face { font-family: "Arantxa-Bold"; src: url("./fonts/Arantxa-Bold.ttf"); }
+html {
+    height: 100%;
+  }
+body {
+    margin: 0;
+    color: #fff;
+    /* Растягиваем body по высоте html */
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
+  
+header {
+    background: transparent;
+    border: 4px black;
+  }
+  
+  
+.header {
+    position: relative; /* Позволяет использовать z-index */
+    z-index: 1; /* Устанавливает приоритет для элемента header */
+    
+}
+.main {
+    position: relative; /* Позволяет использовать z-index */
+    z-index: 0; /* Устанавливает меньший приоритет для элемента main */
+    padding: -100px 0px 0px 0px;
+}
+
+
+.button{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arantxa-Bold';
+    margin: 10px 10px 10px 10px;
+    font-size : 20px;
+    color: white; 
+    cursor: pointer; 
+}
+.button-transparent{
+    background-color: transparent;
+    border-color: transparent;
+    color: rgb(21, 105, 99);
+}
+.button-filled{
+    background-color: rgb(21, 105, 99);
+    border-color: transparent;
+}

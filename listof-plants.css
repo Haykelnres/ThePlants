@@ -1,0 +1,78 @@
+@font-face { font-family: "Arantxa-Bold"; src: url("./fonts/Arantxa-Bold.ttf"); }
+@font-face { font-family: "Work-Sans"; src: url("./fonts/WorkSans.ttf"); }
+.listof-plants__header {
+    display: flex; /* Устанавливаем родительский элемент в режим flex */
+    justify-content: space-between; /* Распределяем содержимое между крайними точками контейнера */
+    margin-top: 100px;
+    margin-left: 6.5vw;
+    margin-right: 10vw;
+    color: black;
+    border-bottom: 1px solid lightgray; /* Добавляем линию снизу */
+    font-family: "Work-Sans";
+    padding-bottom: 10px;
+}
+
+.listof-plants__title {
+    margin: 0;
+    font-weight: 400;
+}
+
+.listof-plants__dropbox {
+    margin-left: auto; /* Располагаем элемент у правого края контейнера */
+}
+
+.listof-plants__plant-box {
+    padding-top: 30px;
+    flex: 1;
+    min-width: 0; /* Предотвращает появление горизонтального скролла */
+    max-width: 14vw;
+    display: inline-block;
+    text-align: center; /* Обеспечивает растягивание по высоте */
+    color: black;
+    justify-content: center; /* Центрирует содержимое вертикально */
+}
+
+.listof-plants__plant-box + .listof-plants__plant-box {
+    margin-left: 3vw;
+}
+.listof-plants__plants-list {
+    display: flex; /* Используем Flexbox для расположения блоков в ряд */
+    width: 100%; /* Ширина равна 100% от родительского элемента */
+    height: auto; /* Автоматическая высота */
+    margin-left: 6.5vw;
+    margin-right: 10vw;
+    box-sizing: border-box;
+    align-items: flex-end;
+    max-width: 87vw;
+    
+}
+
+/* Распределяем пространство между блоками равномерно */
+.listof-plants__plants-list > * {
+    flex: 1; /* Каждый элемент занимает ровно столько места, сколько доступно */
+}
+
+/* Задаем отображение картинок на всю ширину их контейнеров */
+
+.listof-plants__pic img {
+    background-color: rgb(243, 244, 246);
+    width: 100%; /* Картинка растягивается до полной ширины контейнера */
+    object-fit: cover; /* Объект масштабируется так, чтобы заполнить весь контейнер, сохраняя пропорции */
+    max-height: 184.09;
+}
+
+/* Оформление остальных элементов */
+.listof-plants__name-text {
+    font-size: 1.5rem; /* Размер шрифта */
+    margin-top: 8px; /* Отступ сверху */
+    font-family: "Work-Sans";
+    
+}
+
+.listof-plants__price-text {
+    font-weight: bold; /* Полужирный шрифт */
+    color: black; /* Цвет текста */
+    font-size: 1.5rem; /* Размер шрифта */
+    margin-top: 4px; /* Отступ сверху */
+    font-family: "Work-Sans";
+}

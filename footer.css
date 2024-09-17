@@ -1,0 +1,42 @@
+@font-face { font-family: "Work Sans"; src: url("./fonts/WorkSans.ttf"); }
+.footer {
+    height: 268px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%; /* Отступы слева и справа */
+    font-family: 'Work Sans';
+    border-top: 1px solid rgb(185, 211, 209);
+}
+.footer__block {
+    width: calc(100% / 4); /* Разделить ширину на количество блоков */
+    margin: 0 10px; /* Отступы между блоками */
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+.footer__block div {
+    margin-bottom: 10px;
+}
+.footer__submit-btn {
+    margin-top: auto;
+}
+.footer__head-text-second{
+    font-size: 30px;
+    
+}
+.footer__head-text{
+    font-size: 40px;
+    font-weight: normal;
+    color: rgb(21, 105, 99);
+}
+.footer__main-text{
+    color: rgb(79, 79, 79);
+}
+.footer__submit-btn{
+    width: 25%;
+    color: white;
+    font-size: 10px;
+    border-radius: 2px;
+    cursor: pointer;
+}

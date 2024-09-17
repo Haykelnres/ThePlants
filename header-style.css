@@ -1,0 +1,38 @@
+@font-face { font-family: "Arantxa-Bold"; src: url("./fonts/Arantxa-Bold.ttf"); }
+.header__inner{
+    display: flex;
+    align-items: center;
+    margin: 0px 60px 0px 60px;
+}
+.header__btns{
+    margin-left: auto;
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+}
+.header__button{
+    margin-left: auto;
+    height: 51px;
+    width: 150px;
+}
+
+.button-image-search{
+    height: 40px;
+    width: 40px;
+    background-repeat: no-repeat;
+    background: url(./elements/loup.svg);
+    background-position: center; /* Поместите фон в центр кнопки */
+    background-size: cover;
+    border-color: transparent;
+    margin: 10px 60px 10px 10px;
+}
+.button-image-cart{
+    height: 40px;
+    width: 40px;
+    background-repeat: no-repeat;
+    background: url(./elements/cart.svg);
+    background-position: center; /* Поместите фон в центр кнопки */
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-color: transparent;
+}

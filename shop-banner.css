@@ -1,0 +1,42 @@
+@font-face { font-family: "Arantxa-Bold"; src: url("./fonts/Arantxa-Bold.ttf"); }
+@font-face { font-family: "Work Sans"; src: url("./fonts/WorkSans.ttf"); }
+.shop-banner{
+    background-color: rgb(243, 244, 246);
+    margin: 10vw 10vw 10vw 6.5vw;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.shop-banner__description{
+    height: 210px; /* Фиксируем высоту */
+    width: 50%; /* Ограничиваем ширину до 40% */
+    margin-right: 10px; /* Добавляем отступ справа */
+    color: black;
+    align-items: center; /* Выравнивание элементов внутри контейнера по вертикали */
+    display: flex; /* Превращаем контейнер в Flexbox */
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0px 0px 0px 10vw;
+    font-family: "Work Sans";
+    font-size: 50px;
+}
+.shop-banner__picture{
+    display: flex;
+    height: 100%;/* Задаем высоту равную родительскому блоку */
+     /* Ширина будет автоматической */
+    object-fit: cover; /* Растягиваем изображение по ширине и высоте без искажений */
+}
+.shop-banner__button {
+    width: 10vw;
+    height: 50px;
+    cursor: pointer; /* Делаем курсор стрелкой при наведении */
+    padding: 10px 0px 0px 0px;
+    font-family: "Work Sans";
+    color: white;
+    font-size: 20px;
+    text-align: center; /* Центрируем текст внутри кнопки */
+}
+.shop-banner__text{
+    margin: 0px 0px 20px 0px;
+}
